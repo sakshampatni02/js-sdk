@@ -8,7 +8,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Add PR Comment
-      uses: Man-Jain/mesg-pr-action@v1
+      uses: Man-Jain/mesg-pr-action@v2
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         # allow messages to be repeated
