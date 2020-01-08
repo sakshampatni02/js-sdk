@@ -12,9 +12,6 @@ jobs:
     - name: Add PR Comment
       uses: Man-Jain/mesg-pr-action@v1
       with:
-        # the message to print
-        message: 
-        # a github token for API access
         token: ${{ secrets.GITHUB_TOKEN }}
         # allow messages to be repeated
     - name: Run a multi-line script
