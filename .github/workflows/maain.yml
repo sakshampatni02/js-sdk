@@ -1,0 +1,23 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Add PR Comment
+      uses: Man-Jain/mesg-pr-action@v1
+      with:
+        # the message to print
+        message: 
+        # a github token for API access
+        token: ${{ secrets.GITHUB_TOKEN }}
+        # allow messages to be repeated
+    - name: Run a multi-line script
+      run: |
+        echo Add other actions to build,
+        echo test, and deploy your project.
